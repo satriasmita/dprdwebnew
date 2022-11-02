@@ -22,8 +22,8 @@ $root_folder = Yii::getAlias('@root');
                     <h2><span>Berita Terbaru</span></h2>
                 </div>
                 <div class="col-md-6">
-                    <p>Dalam memberikan Pelayanan Kami selalu menerapkan Protokol kesehatan. Masyarakat Sehat adalah masyarakat yang membudidayakan Hidup Bersih dan menerapkan Pola Hidup Seimbang.
-</p>
+                    <p> Dewan Perwakilan Rakyat Daerah Kota Pariaman adalah lembaga legislatif unikameral yang berkedudukan di Kota Pariaman, provinsi Sumatra Barat. DPRD Kota Pariaman memiliki 20 orang anggota yang tersebar di 9 partai politik
+                    </p>
                 </div>
             </div>
         </div>

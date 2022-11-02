@@ -18,11 +18,11 @@ $root_folder = Yii::getAlias('@root');
         <div class="section-title">
             <div class="row">
                 <div class="col-md-6">
-                    <h6>Puskesmas Marunggi</h6>
+                    <h6>DPRD KOTA PARIAMAN</h6>
                     <h2><span>Pengumuman</span></h2>
                 </div>
                 <div class="col-md-6">
-                    <p>Informasi dan Pemberitahuan  Penting terkait pelayanan  Puskesmas Marunggi </p>
+                    <p>Informasi dan Pemberitahuan  Penting terkait DPRD Kota Pariaman </p>
                 </div>
             </div>
         </div>
