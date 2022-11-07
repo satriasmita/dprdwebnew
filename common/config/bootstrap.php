@@ -5,5 +5,5 @@ Yii::setAlias('@backend', dirname(dirname(__DIR__)) . '/backend');
 Yii::setAlias('@console', dirname(dirname(__DIR__)) . '/console');
 Yii::setAlias('@uploads', dirname(dirname(__DIR__)) . '/uploads'); 
 Yii::setAlias('@browseimage', '/uploads'); 
-Yii::setAlias('@root','http://localhost/dprdwebnew/');
+Yii::setAlias('@root','http://localhost:8080/dprdwebnew/'); // LINK BERFUNGSI AGAR KETIKA SLIDER DI BUAT, IMAGE DAPAT MUNCUL
 
