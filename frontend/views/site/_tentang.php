@@ -45,15 +45,15 @@ $root_folder = Yii::getAlias('@root');
             <h3 class="text-uppercase small-line mb20">Agenda <span class="text-theme-color"> Kegiatan</span></h3>
             <div class="latest-project">
                 
-                <!-- <-?php 
+                <?php 
                         $age = (new Agenda)->getDetailAgenda(); 
                         foreach ($age as $row) 
                     ?>
               <ul class="hours_wigdet">
-                <li>Waktu : <=?= $row->agenda_waktu; ?></li>
-                <li>Pukul : <=?= $row->agenda_pukul; ?></li>
-                <li>Tempat : ?= $row->agenda_tempat; ?></li>
-                <li>Detail Acara : ?= $row->agenda_penjelasan; ?></li> -->
+                <li>Waktu : <?= $row->agenda_waktu; ?></li>
+                <li>Pukul : <?= $row->agenda_pukul; ?></li>
+                <li>Tempat : <?= $row->agenda_tempat; ?></li>
+                <li>Detail Acara : <?= $row->agenda_penjelasan; ?></li>
 
               </ul>
               
