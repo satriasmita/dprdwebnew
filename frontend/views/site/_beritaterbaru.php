@@ -48,7 +48,7 @@ $root_folder = Yii::getAlias('@root');
 
                 </div>
                 <h4 class="post-title"><?= $row->berita_judul ?></h4>
-                <?= Html::a('Baca Selengkapnya', ['view-post', 'id_post' => $row->berita_id], ['class' => 'btn theme-btn mt10']) ?>
+                <?= Html::a('Baca Selengkapnya', ['view-post', 'berita_id' => $row->berita_id], ['class' => 'btn theme-btn mt10']) ?>
 
               </div>
             </article>
