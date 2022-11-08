@@ -115,7 +115,7 @@ $root_folder = Yii::getAlias('@root');
       <div class="section-title">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center">
-            <h6 style="#fff">DINAS KOMUNIKASI DAN INFORMATIKA KOTA PARIAMAN787</h6>
+            <h6 style="#fff">DINAS KOMUNIKASI DAN INFORMATIKA KOTA PARIAMAN</h6>
             <h2 class="text-white">BERITA SEPUTAR PEMERINTAHAN <span><br>KOTA PARIAMAN</span></h2>
             <p class="text-white"></p>
           </div>
