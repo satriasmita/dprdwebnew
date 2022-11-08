@@ -378,7 +378,16 @@ class SiteController extends Controller
     //     ]);
     // }
 
-   
+    public function actionViewPost($id_post){
+        
+        // echo $id_post;
+        // die;
+        $model = Posting::findOne($id_post);
+
+        return $this->render('_tamplateViewPost',[
+            'model' => $model
+        ]);
+    }
 
 
     public function actionViewPage($id_page){
