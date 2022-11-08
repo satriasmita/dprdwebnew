@@ -17,7 +17,7 @@ $this->title = 'Detail Berita';
                 <div class="col-md-12">
                     <div class="inner-title">
                         <!-- <h2>?= $categoryPosting->nama_kategori?></h2> -->
-                        <p>Home. Blog</p>
+                        <p>Home / Berita</p>
                     </div>
                 </div>
             </div>
