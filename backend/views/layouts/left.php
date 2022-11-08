@@ -45,6 +45,7 @@
                     ['label' => 'Berita', 'icon' => 'folder-open', 'url' => ['/berita']],
                     ['label' => 'Galeri', 'icon' => 'users', 'url' => ['/galeri']],
                     
+                    ['label' => 'Posting', 'icon' => 'users', 'url' => ['/posting']],
 
                     [
                         'label' => 'Manajemen Anggota',
