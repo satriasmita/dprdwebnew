@@ -2,7 +2,7 @@
 
 use yii\helpers\Url;
 use yii\helpers\Html;
-use backend\models\Berita;
+use backend\models\Posting;
 
 $imgPath = Yii::getAlias('@root').'/imagesfrontend';
 $root_folder = Yii::getAlias('@root');
@@ -30,25 +30,25 @@ $root_folder = Yii::getAlias('@root');
 
         <div class="section-content">
         <div class="row">
-            <?php 
-                $beritadprd = (new Berita)->getDataNews();
-
-                foreach ($beritadprd as $row) {
+        <?php 
+                $beritaopd = (new Posting)->getDataUntukBerita(); 
+                foreach ($beritaopd as $row) {
             ?>
           <div class="col-sm-6 col-md-4 wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
             <article class="post clearfix">
               <div class="blog-effect"> 
-              <img class="img-responsive" style="width: 250px; height: 150px"src="<?php echo Url::to('@web/public/images/Berita/'. $row->berita_foto)?>" alt="">
+              <?= Html::img($root_folder.$row->posting_image_utama,['style'=>'max-height:200px;min-height:200px;width:auto']); ?>
 
                 </figure>
-                </a> </div>
+                </a> 
+              </div>
               <div class="post-body">
                 <div class="post-info"> 
-                <?= $row->berita_tanggal; ?></a> 
+                <h4><?= $row->posting_judul ?></h4>
 
                 </div>
-                <h4 class="post-title"><?= $row->berita_judul ?></h4>
-                <?= Html::a('Baca Selengkapnya', ['view-post', 'berita_id' => $row->berita_id], ['class' => 'btn theme-btn mt10']) ?>
+                <p>Posting <?php echo $row->create_at; ?> </p>
+                <?= Html::a('Baca Selengkapnya', ['detail-berita', 'posting_id' => $row->posting_id], ['class' => 'btn theme-btn mt10 text-lowercase']) ?>
 
               </div>
             </article>
