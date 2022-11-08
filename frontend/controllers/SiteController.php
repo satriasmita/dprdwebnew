@@ -25,6 +25,7 @@ use backend\models\SurveiDetail;
 use backend\models\Model;
 use yii\helpers\ArrayHelper;
 use backend\models\Berita;
+use yii\data\Pagination;
 
 /**
  * Site controller
@@ -366,16 +367,19 @@ class SiteController extends Controller
     //     ]);
     // }
 
-    public function actionViewPost($id_post){
+    // public function actionViewPost($berita_id){
         
-        // echo $id_post;
-        // die;
-        $model = Berita::findOne($id_post);
+    //     // echo $berita_id;
+    //     // die;
+    //     $model = Berita::findOne($berita_id);
 
-        return $this->render('_tamplateViewPost',[
-            'model' => $model
-        ]);
-    }
+    //     return $this->render('_tamplateViewPost',[
+    //         'model' => $model
+    //     ]);
+    // }
+
+   
+
 
     public function actionViewPage($id_page){
         
