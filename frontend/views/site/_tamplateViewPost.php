@@ -4,7 +4,7 @@ use yii\helpers\Url;
 use yii\helpers\Html;
 use backend\models\Posting;
 
-$this->title = $model->berita_judul;
+$this->title = 'Berita Seputar Dinas Kesehatan';
 
 $imgPath = Yii::getAlias('@root').'/imagesfrontend';
 $root_folder = Yii::getAlias('@root');
@@ -17,7 +17,8 @@ $root_folder = Yii::getAlias('@root');
             <div class="row">
                 <div class="col-md-12">
                     <div class="inner-title">
-                        <h2><?= $model->berita_judul; ?></h2>
+                        <h2><?= $model->posting_judul; ?></h2>
+                        <p>Home. Blog</p>
                     </div>
                 </div>
             </div>
@@ -35,19 +36,18 @@ $root_folder = Yii::getAlias('@root');
                                 <div class="">
                                     <a href="#">
                                       <!-- <img class="img-responsive" src="images/blog/b1.jpg" alt=""> -->
-                                      <!-- ?= Html::img($root_folder.$model->berita_foto,['class'=>'img-responsive']); ?> -->
-                                        <img class="img-responsive" style="width: 250px; height: 150px"src="<?php echo Url::to('@web/public/images/Berita/'. $model->berita_foto)?>" alt="">
+                                      <?= Html::img($root_folder.$model->posting_image_utama,['class'=>'img-responsive']); ?>
                                     </a>
                                     <div class="post-body">
                                         <div class="post-info mt20">
-                                            <?= $model->tanggalIndo(date('Y-m-d',strtotime($model->berita_tanggal))).' '.date('H:i',strtotime($model->berita_tanggal)) ; ?>
+                                            <?= $model->tglIndo(date('Y-m-d',strtotime($model->create_at))).' '.date('H:i',strtotime($model->create_at)) ; ?>
                                             <a href="#"> - <span class="icon icon-Pen"></span> 
-                                                <!-- ?= $model->authorCreate->username; ?> -->
+                                                <?= $model->authorCreate->username; ?>
                                             </a>
                                         </div>
 
-                                        <h3 class="post-title"><?= $model->berita_judul; ?></h3>
-                                        <p><?= $model->berita_isi ; ?></p>
+                                        <h3 class="post-title"><?= $model->posting_judul; ?></h3>
+                                        <p><?= $model->posting_deskripsi ; ?></p>
 
                                      </div>
                                 </div>
@@ -66,9 +66,9 @@ $root_folder = Yii::getAlias('@root');
                                         <article class="post">
                                             <figure class="post-thumb"><a href="#">
                                                 <!-- <img class="" src="images/blog/s1.jpg" alt=""></a> -->
-                                                <?= Html::img($root_folder.$row->berita_foto,['class'=>'']); ?>
+                                                <?= Html::img($root_folder.$row->posting_image_utama,['class'=>'']); ?>
                                             </figure>
-                                            <h4><a href="#"><?= $model->berita_judul; ?></a></h4>
+                                            <h4><a href="#"><?= $model->posting_judul; ?></a></h4>
                                             <div class="post-info">
                                                 <?= $row->tglIndo(date('Y-m-d',strtotime($row->create_at))).' '.date('H:i',strtotime($row->create_at)) ; ?>
                                             </div>
