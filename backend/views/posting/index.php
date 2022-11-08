@@ -11,8 +11,16 @@ $this->title = 'Manajemen Posting';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="posting-index">
+<div class="box box-solid box-info">
+        <div class="box-header">
+            <h3 class="box-title"><?= Html::encode($this->title) ?></h3>
+            <div class="box-tools pull-right">
+                <?= Html::a('<i class="fa fa-fw fa-plus-square"></i><b>Tambah ' .Html::encode($this->title).'</b>', ['create'], ['class' => 'btn btn-primary']) ?>
+            </div>
+        </div>
+        <div class="box-body">
+        <?php echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <?php echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
