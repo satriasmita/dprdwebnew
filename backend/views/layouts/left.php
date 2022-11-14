@@ -42,8 +42,8 @@
                     //     ],
                     // ],
                     ['label' => 'Agenda Kegiatan', 'icon' => 'bank', 'url' => ['/agenda']],
-                    ['label' => 'Berita', 'icon' => 'folder-open', 'url' => ['/berita']],
-                    ['label' => 'Galeri', 'icon' => 'users', 'url' => ['/galeri']],
+                    // ['label' => 'Berita', 'icon' => 'folder-open', 'url' => ['/berita']],
+                    // ['label' => 'Galeri', 'icon' => 'users', 'url' => ['/galeri']],
                     
                     ['label' => 'Posting', 'icon' => 'users', 'url' => ['/posting']],
 
