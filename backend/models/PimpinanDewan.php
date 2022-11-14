@@ -51,16 +51,16 @@ class PimpinanDewan extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'pimpinan_id' => 'Pimpinan ID',
+            'pimpinan_id' => 'ID',
             'pimpinan_nama' => 'Nama',
             'pimpinan_jabatan' => 'Jabatan',
-            'pimpinan_image' => 'Pimpinan Image',
-            'pimpinan_ttl' => 'Pimpinan Ttl',
-            'pimpinan_agama' => 'Pimpinan Agama',
-            'pimpinan_suamiistri' => 'Pimpinan Suamiistri',
-            'pimpinan_anak' => 'Pimpinan Anak',
-            'pimpinan_alamat' => 'Pimpinan Alamat',
-            'pimpinan_pengalaman_organisasi' => 'Pimpinan Pengalaman Organisasi',
+            'pimpinan_image' => 'Image',
+            'pimpinan_ttl' => 'Tempat / Tanggal Lahir',
+            'pimpinan_agama' => 'Agama',
+            'pimpinan_suamiistri' => 'Suami / Istri',
+            'pimpinan_anak' => 'Anak',
+            'pimpinan_alamat' => 'Alamat',
+            'pimpinan_pengalaman_organisasi' => 'Pengalaman Organisasi',
         ];
     }
 
